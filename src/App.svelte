@@ -1,5 +1,7 @@
 <script>
-
+  import Header from './components/Header.svelte'
 </script>
 
-<h1>site da Larissa</h1>
+<div>
+    <Header/>
+</div>
