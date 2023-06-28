@@ -13,9 +13,16 @@
         border-radius: 0 0 20px 20px;
         display: flex;
         align-items: center;
+        position: fixed;
     }
 
     h2 {
         margin-left: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+        h2 {
+            font-size: 0.8rem;
+        }
     }
 </style>
