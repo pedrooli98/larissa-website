@@ -1,6 +1,7 @@
 <script>
   import Header from './components/Header.svelte'
   import Body from './components/Body.svelte'
+  import Castelo from './img/castelo.png'
 </script>
 
 <div class="main">
@@ -16,7 +17,6 @@
     width: 100vw;
     height: 100vh;
     width: 100%;
-    background-image: url('./img/castelo.png');
   }
 
   .body {
