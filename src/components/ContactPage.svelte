@@ -10,7 +10,7 @@
     const contacts = [{
         id: 'whatsapp',
         text: 'WHATSAPP PARA ORÇAMENTOS!',
-        link: 'https://wa.me/556299127500'
+        link: 'https://wa.me/5562991287500'
     },{
         id: 'behance',
         text: 'PORTFÓLIO NO BEHANCE',
