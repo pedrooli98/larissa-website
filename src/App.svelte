@@ -2,7 +2,7 @@
   import Header from './components/Header.svelte'
   import Body from './components/Body.svelte'
   import ContactPage from './components/ContactPage.svelte';
-  import NavButton from './components/NavButton.svelte';
+  import { slide } from 'svelte/transition';
 
   let pageStatus = false;
 
@@ -13,7 +13,7 @@
 </script>
 
 {#if !pageStatus}
-  <div class="main">
+  <div class="main" in:slide out:slide>
       <Header/>
       <div class="body">
         <Body togglePage={togglePage} pageStatus={pageStatus}/>
@@ -22,7 +22,7 @@
 {/if}
 
 {#if pageStatus}
-  <div class="main">
+  <div class="main" in:slide out:slide>
       <div class="body">
         <ContactPage togglePage={togglePage} pageStatus={pageStatus}/>
       </div>

@@ -1,4 +1,6 @@
 <script>
+    import BoopAction from "./BoopAction.svelte";
+
     export let id;
     export let text;
     export let link;
@@ -6,13 +8,13 @@
 
 </script>
 
-
+<BoopAction boopParams={{y: 3, timing: 200}}>
     <a href={link} target="_blank">
         <button>
             {text}
         </button>
     </a>
-
+</BoopAction>
 
 <style>
     a {

@@ -1,20 +1,32 @@
 <script>
     import FaAngleDown from 'svelte-icons/fa/FaAngleDown.svelte'
     import FaAngleUp from 'svelte-icons/fa/FaAngleUp.svelte'
+    import Boop from './Boop.svelte';
+    import BoopAction from './BoopAction.svelte';
     export let togglePage;
     export let pageStatus;
+
+    const handleAnimation = () => {
+
+    }
+
 </script>
 
 {#if !pageStatus}
-<button on:click={togglePage}>
-   <FaAngleDown/> 
-</button>
+<BoopAction boopParams={{ scale: 1.2, timing: 200}}>
+    <button on:click={togglePage}>
+       <FaAngleDown/> 
+    </button>
+</BoopAction>
+
 {/if}
 
 {#if pageStatus}
-<button on:click={togglePage}>
-   <FaAngleUp/> 
-</button>
+<BoopAction boopParams={{ scale: 1.2, timing: 200}}>
+    <button on:click={togglePage}>
+       <FaAngleUp/> 
+    </button>
+</BoopAction>
 {/if}
 
 <style>
