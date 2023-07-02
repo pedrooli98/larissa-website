@@ -1,15 +1,33 @@
 <script>
   import Header from './components/Header.svelte'
   import Body from './components/Body.svelte'
-  import Castelo from './img/castelo.png'
+  import ContactPage from './components/ContactPage.svelte';
+  import NavButton from './components/NavButton.svelte';
+
+  let pageStatus = false;
+
+  const togglePage = () => {
+        pageStatus ? pageStatus = false : pageStatus = true;
+    }
+
 </script>
 
-<div class="main">
-    <Header/>
-    <div class="body">
-      <Body/>
-    </div>
-</div>
+{#if !pageStatus}
+  <div class="main">
+      <Header/>
+      <div class="body">
+        <Body togglePage={togglePage} pageStatus={pageStatus}/>
+      </div>
+  </div>
+{/if}
+
+{#if pageStatus}
+  <div class="main">
+      <div class="body">
+        <ContactPage togglePage={togglePage} pageStatus={pageStatus}/>
+      </div>
+  </div>
+{/if}
 
 <style>
   .main {
