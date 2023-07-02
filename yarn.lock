@@ -137,6 +137,11 @@
     svelte-hmr "^0.15.2"
     vitefu "^0.2.4"
 
+boop@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/boop/-/boop-0.0.2.tgz#c1ae1103d8d1de0ed72ce0abc950d6e2e5590443"
+  integrity sha512-AhCtxrlWJeDsySa526NlqCNdUC1QUnGMg1z8A4o0r38pwUDtuxSkrA+7PUoz+nbkceWn3cfRxrS4lY88SgPxXg==
+
 debug@^4.3.4:
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"

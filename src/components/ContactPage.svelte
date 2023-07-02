@@ -10,15 +10,15 @@
     const contacts = [{
         id: 'whatsapp',
         text: 'WHATSAPP PARA ORÇAMENTOS!',
-        link: ''
+        link: 'https://wa.me/556299127500'
     },{
         id: 'behance',
         text: 'PORTFÓLIO NO BEHANCE',
-        link: ''
+        link: 'https://www.behance.net/estudiocapra'
     },{
         id: 'instagram',
         text: 'INSTAGRAM',
-        link: ''
+        link: 'https://www.instagram.com/estudio.capra/'
     }]
 
 </script>
